@@ -1,26 +1,53 @@
-# AAIDC Module 2: Multi-Agent Publication Assistant
+# AAIDC Module 2: Multi-Agent System for AI Project Analysis
 
-A multi-agent system that helps improve AI project publications by analyzing GitHub repos and providing actionable suggestions.
+## 🧠 Project Overview
 
-## 🤖 Agents
-1. **RepoAnalyzer** – Understands repo structure
-2. **MetadataRecommender** – Suggests title, tags, summary
-3. **Reviewer** – Checks for missing sections & improvements
+This project implements a **multi-agent system** as part of the **Agentic AI Developer Certification (AAIDC) – Module 2**. The system analyzes GitHub repositories of AI/ML projects and provides actionable suggestions to improve their presentation, discoverability, and completeness.
 
-## 🛠️ Tools Used
-- Web Search (Tavily)
-- Math Calculator
-- RAG (simulated)
+The system uses **CrewAI** as the orchestration framework and includes **3 specialized agents** with distinct roles:
+1. **Researcher Agent** – Searches the web for similar projects
+2. **Writer Agent** – Generates improvement suggestions
+3. **Reviewer Agent** – Validates suggestions against repo content
 
-## 📦 Tech Stack
-- LangGraph (orchestration)
-- LangChain
-- OpenAI (gpt-3.5-turbo)
-- FAISS (vector store)
+All agents use **free, open-source LLMs** (Groq + Llama3) and **no paid APIs**, making it beginner-friendly and cost-free.
 
-## ▶️ How to Run
-1. Get a free [Tavily API key](https://tavily.com/)
-2. Create `.env` file:
-   ```env
-   TAVILY_API_KEY=your_key_here
-   OPENAI_API_KEY=your_key_here
+## 🛠️ Technical Implementation
+
+### Stack Used
+- **Orchestration**: CrewAI (simple, powerful, beginner-friendly)
+- **LLM**: Groq API with `llama3-8b-8192` (free tier available)
+- **Tools**: 
+  - Tavily Search Tool (free web search)
+  - GitHub Repo Reader (built-in, no API key needed)
+  - RAG Retriever (local README analysis)
+- **Agent Roles**:
+  - Researcher → Finds similar projects
+  - Writer → Suggests improvements
+  - Reviewer → Fact-checks suggestions
+
+## ✅ Key Features
+- ✅ 3+ agents with distinct roles
+- ✅ Multi-agent collaboration via CrewAI
+- ✅ Tool integration (web search, repo reader, RAG)
+- ✅ Free LLM (Groq) — no OpenAI API key needed
+- ✅ Clean, documented code with setup instructions
+
+## 📁 GitHub Repository
+
+🔗 **Repo Link**: https://github.com/R786P/aaidc-module2
+
+The repository includes:
+- `multi_agent_system.py` – CrewAI setup with 3 agents
+- `requirements.txt` – Dependencies
+- `README.md` – Setup and usage guide
+
+## 🎯 Alignment with AAIDC Module 2 Requirements
+| Requirement | Status |
+|-----------|--------|
+| Multi-Agent System (3+ agents) | ✅ |
+| Tool Integration (3+ tools) | ✅ |
+| Orchestration Framework (CrewAI) | ✅ |
+| Clear communication between agents | ✅ |
+| No external paid services | ✅ |
+
+*Submitted for AAIDC Module 2 Review Cycle – December 2025*
