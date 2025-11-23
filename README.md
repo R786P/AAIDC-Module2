@@ -1,4 +1,4 @@
-# AAIDC Module 2: Architecting Agentic AI Systems
+# GitHub Project Analyzer: Multi-Agent System for README Enhancement
 
 ## 🧠 Project Overview
 
@@ -53,5 +53,7 @@ Shows clear error messages and handles wrong inputs.
 | Orchestration Framework (CrewAI) | ✅ |
 | Clear communication between agents | ✅ |
 | No external paid services | ✅ |
-
+## 📥 Installation
+```bash
+pip install -r requirements.txt
 *Submitted for AAIDC Module 2 Review Cycle – December 2025*
